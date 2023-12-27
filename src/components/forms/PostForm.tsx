@@ -22,7 +22,7 @@ import {  useToast } from "../ui/use-toast"
 import { useCreatePost, useUpdatePost } from "@/lib/react-query/queriesAndMutations"
  
 type PostFormProps = {
-  post?: Models.Document;
+  post?: Models.Document |null|undefined;
   action: 'Create' | 'Update';
   
 }
