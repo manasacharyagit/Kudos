@@ -1,4 +1,5 @@
 import {Outlet, Navigate} from 'react-router-dom'
+import kudosimg from '/assets/images/kudoscollage.png'
 
 
 const AuthLayout = () => {
@@ -14,9 +15,9 @@ const AuthLayout = () => {
         <Outlet/>  {/* if not then sign-up or sign-in will appear, whichever is suitable */}
         
       </section>
-      <img src="/assets/images/side-img.svg"
+      <img src={kudosimg}
        alt="logo" 
-      className='hidden xl:block h-screen w-1/2 object-cover bg-no-repeat'
+      className=' hidden xl:block h-screen w-1/2 object-contain bg-no-repeat'
       />
       </>
     )}
