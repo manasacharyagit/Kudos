@@ -21,7 +21,7 @@ const LeftSidebar = () => {
     
   return (
     <nav className="leftsidebar">
-        <div className="flex flex-col gap-9">
+        <div className="flex flex-col gap-8">
         <Link to="/" className="flex gap-3 items-center">
             <img
              src="/assets/images/logo.svg"
@@ -72,16 +72,18 @@ const LeftSidebar = () => {
                     </li>
                 )
             })}
-           </ul>
-        </div>
-        
-        <Button variant='ghost'
+            <Button variant='ghost'
         className='shad-button_ghost'
         onClick={()=>signOut()}
         >
             <img src='/assets/icons/logout.svg' alt=''/>
             <p className='small-medium lg:base-medium'>Logout</p>
         </Button>
+           </ul>
+           
+        </div>
+        
+        
     </nav>
   )
 }
